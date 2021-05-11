@@ -1,0 +1,137 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Lora", serif;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+figure {
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding-left: 0;
+  flex-wrap: wrap;
+  line-height: 2;
+}
+
+header nav a {
+  padding: 0.5rem;
+  text-decoration: none;
+  margin: 0.5rem;
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 3px solid transparent;
+  line-height: 3;
+}
+
+header nav a.active {
+  border-bottom-color: green;
+}
+
+header nav a:focus,
+header nav a:hover {
+  border: 3px solid green;
+  outline: 0;
+}
+
+header nav a:hover {
+  background: green;
+  color: white;
+}
+
+.site-name {
+  font-weight: 700;
+  color: #555;
+  margin: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+footer {
+  padding: 1rem 2rem;
+  flex-shrink: 0;
+  background-color: #e0f5d9;
+}
+
+/* home page */
+
+.home-content {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+p#joke-text {
+  display: inline;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 1rem;
+}
+
+@media (min-width: 30rem) {
+  .home-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.home-content p {
+  margin-top: 0;
+}
+
+/* plant ideas page */
+
+.card-grid-container {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 50rem) {
+  .card-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card-grid {
+  height: 18rem;
+  width: 16rem;
+}
